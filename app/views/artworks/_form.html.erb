@@ -1,0 +1,97 @@
+<%= form_with(model: artwork) do |form| %>
+  <% if artwork.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(artwork.errors.count, "error") %> prohibited this artwork from being saved:</h2>
+
+      <ul>
+        <% artwork.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :api_link, style: "display: block" %>
+    <%= form.text_field :api_link %>
+  </div>
+
+  <div>
+    <%= form.label :artist_title, style: "display: block" %>
+    <%= form.text_field :artist_title %>
+  </div>
+
+  <div>
+    <%= form.label :artwork_type_title, style: "display: block" %>
+    <%= form.text_field :artwork_type_title %>
+  </div>
+
+  <div>
+    <%= form.label :classification_title, style: "display: block" %>
+    <%= form.text_field :classification_title %>
+  </div>
+
+  <div>
+    <%= form.label :date_display, style: "display: block" %>
+    <%= form.text_field :date_display %>
+  </div>
+
+  <div>
+    <%= form.label :department_title, style: "display: block" %>
+    <%= form.text_field :department_title %>
+  </div>
+
+  <div>
+    <%= form.label :dimensions, style: "display: block" %>
+    <%= form.text_field :dimensions %>
+  </div>
+
+  <div>
+    <%= form.label :gallery_title, style: "display: block" %>
+    <%= form.text_field :gallery_title %>
+  </div>
+
+  <div>
+    <%= form.label :image_id, style: "display: block" %>
+    <%= form.text_field :image_id %>
+  </div>
+
+  <div>
+    <%= form.label :image_link, style: "display: block" %>
+    <%= form.text_field :image_link %>
+  </div>
+
+  <div>
+    <%= form.label :latitude, style: "display: block" %>
+    <%= form.text_field :latitude %>
+  </div>
+
+  <div>
+    <%= form.label :longitude, style: "display: block" %>
+    <%= form.text_field :longitude %>
+  </div>
+
+  <div>
+    <%= form.label :medium_display, style: "display: block" %>
+    <%= form.text_field :medium_display %>
+  </div>
+
+  <div>
+    <%= form.label :place_of_origin, style: "display: block" %>
+    <%= form.text_field :place_of_origin %>
+  </div>
+
+  <div>
+    <%= form.label :style_title, style: "display: block" %>
+    <%= form.text_field :style_title %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,62 @@
+# == Schema Information
+#
+# Table name: artworks
+#
+#  id                   :integer          not null, primary key
+#  api_link             :string
+#  artist_title         :string
+#  artwork_type_title   :string
+#  classification_title :string
+#  date_display         :string
+#  department_title     :string
+#  dimensions           :string
+#  gallery_title        :string
+#  image_id             :string
+#  image_link           :string
+#  latitude             :string
+#  longitude            :string
+#  medium_display       :string
+#  place_of_origin      :string
+#  style_title          :string
+#  title                :string
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#
+
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  api_link: MyString
+  artist_title: MyString
+  artwork_type_title: MyString
+  classification_title: MyString
+  date_display: MyString
+  department_title: MyString
+  dimensions: MyString
+  gallery_title: MyString
+  image_id: MyString
+  image_link: MyString
+  latitude: MyString
+  longitude: MyString
+  medium_display: MyString
+  place_of_origin: MyString
+  style_title: MyString
+  title: MyString
+
+two:
+  api_link: MyString
+  artist_title: MyString
+  artwork_type_title: MyString
+  classification_title: MyString
+  date_display: MyString
+  department_title: MyString
+  dimensions: MyString
+  gallery_title: MyString
+  image_id: MyString
+  image_link: MyString
+  latitude: MyString
+  longitude: MyString
+  medium_display: MyString
+  place_of_origin: MyString
+  style_title: MyString
+  title: MyString
